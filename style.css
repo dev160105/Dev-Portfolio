@@ -1,0 +1,106 @@
+
+@font-face {
+    font-family: 'PixelatedElegance';
+    src: url('../fonts/pixelated-elegance.ttf') format('truetype');
+}
+
+body {
+    font-family: 'PixelatedElegance', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af); /* Vibrant dark gradient */
+    color: #FFF;
+    animation: fadeIn 2s ease-in;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header {
+    background: #1f2833;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    animation: slideDown 1.5s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #76c7c0; /* Teal color */
+    transform: scale(1.1);
+}
+
+.home, .about, .experience, .projects, .contact {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(31, 41, 55, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(76, 199, 192, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home:hover, .about:hover, .experience:hover, .projects:hover, .contact:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px rgba(76, 199, 192, 0.8);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-link img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-link:hover {
+    color: #76c7c0;
+    transform: scale(1.05);
+}
+
+.contact-link:hover img {
+    transform: rotate(20deg);
+}
+
+.footer {
+    background: #1f2833;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+}
